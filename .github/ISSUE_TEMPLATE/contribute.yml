@@ -1,0 +1,37 @@
+name: Custom Issue Template
+description: Use this template for a custom issue.
+labels: ["needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thanks for taking the time to open an issue!
+        
+  - type: dropdown
+    id: issue-category
+    attributes:
+      label: Category
+      description: Please select a category that best describes your issue.
+      options:
+        - General
+        - Sensitivity Analysis
+        - Uncertainty Quantification
+        - Jupyter Notebook
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Description
+      description: Please provide a detailed description of your issue.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps to Reproduce
+      description: Please provide steps to reproduce your issue. This will help us to identify and resolve it quickly.
+    validations:
+      required: false
