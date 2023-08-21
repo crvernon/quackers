@@ -1,6 +1,9 @@
 name: Contribution Proposal
-description: Want to contribute to our eBook?  Fill the following proposal form and we will review your contribution idea shortly.
+description: 
+  Want to contribute to our eBook?  Fill the following proposal form and we will review your contribution idea shortly. We require that all contributions including any code, data, or other content provided with them be fully open source.
+
 labels: ["needs triage"]
+
 body:
   - type: markdown
     attributes:
