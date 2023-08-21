@@ -1,29 +1,34 @@
-name: Contribution Proposal
+name: Tutorial Contribution
 description: We require that all contributions including any code, data, or other content provided with them be fully open source.
 
 labels: ["tutorial", "in review"]
-assignees: []
 
-- type: checkboxes
-  id: pull-request-checks
-  attributes:
-    label: Checklist
-    description: Please ensure to check the following boxes
-    options:
-      - label: My contribution proposal has been approved
-      - label: I have read the contributing guidelines
-      - label: My code follows the style guidelines of this project
-      - label: I have performed a self-review of my own code
-      - label: I have commented my code, particularly in hard-to-understand areas
-      - label: I have made corresponding changes to the documentation
-      - label: My code is fully open source and can be distributed using the [BSD-2-Clause](https://opensource.org/license/bsd-2-clause/) license
-  validations:
-    required: true
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Please fill out the form completly
 
-- type: textarea
-  id: pull-request-confirm
-  attributes:
-    label: Contribution Issue Link
-    description: Please enter the link to your approved contribution issue
-  validations:
-    required: true
+  - type: checkboxes
+    id: pull-request-checks
+    attributes:
+      label: Checklist
+      description: Please ensure to check the following boxes
+      options:
+        - label: My contribution proposal has been approved
+        - label: I have read the contributing guidelines
+        - label: My code follows the style guidelines of this project
+        - label: I have performed a self-review of my own code
+        - label: I have commented my code, particularly in hard-to-understand areas
+        - label: I have made corresponding changes to the documentation
+        - label: My code is fully open source and can be distributed using the [BSD-2-Clause](https://opensource.org/license/bsd-2-clause/) license
+    validations:
+      required: true
+
+  - type: textarea
+    id: pull-request-confirm
+    attributes:
+      label: Contribution Issue Link
+      description: Please enter the link to your approved contribution issue
+    validations:
+      required: true
